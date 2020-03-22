@@ -1,0 +1,14 @@
+D:\AP project\APWPF\bin\Debug\APWPF.exe.config
+D:\AP project\APWPF\bin\Debug\APWPF.exe
+D:\AP project\APWPF\bin\Debug\APWPF.pdb
+D:\AP project\APWPF\obj\Debug\APWPF.csprojAssemblyReference.cache
+D:\AP project\APWPF\obj\Debug\MainWindow.g.cs
+D:\AP project\APWPF\obj\Debug\App.g.cs
+D:\AP project\APWPF\obj\Debug\APWPF_MarkupCompile.cache
+D:\AP project\APWPF\obj\Debug\APWPF_MarkupCompile.lref
+D:\AP project\APWPF\obj\Debug\MainWindow.baml
+D:\AP project\APWPF\obj\Debug\APWPF.g.resources
+D:\AP project\APWPF\obj\Debug\APWPF.Properties.Resources.resources
+D:\AP project\APWPF\obj\Debug\APWPF.csproj.GenerateResource.cache
+D:\AP project\APWPF\obj\Debug\APWPF.exe
+D:\AP project\APWPF\obj\Debug\APWPF.pdb
