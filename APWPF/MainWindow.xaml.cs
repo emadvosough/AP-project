@@ -24,5 +24,10 @@ namespace APWPF
         {
             InitializeComponent();
         }
+
+        private void nextPageButton_Click(object sender, RoutedEventArgs e)
+        {
+            OnlyTabControl.SelectedIndex = 1;
+        }
     }
 }
