@@ -6,10 +6,14 @@
         xmlns:local="clr-namespace:APWPF"
         mc:Ignorable="d"
         Title="User interface" Height="600" Width="450">
+        <Window.Background>
+        <SolidColorBrush Color="#9dc6a7">
+            </SolidColorBrush>
+        </Window.Background>
     <TabControl x:Name="OnlyTabControl">
-        <TabItem Header="page 1" HorizontalAlignment="Right" Width="52">
-            <Border Padding="30">
-                <StackPanel>
+        <TabItem Header="page 1" HorizontalAlignment="Right" Width="52" Background="#ffd3b6">
+            <Border Padding="30" Background="#eaffd0">
+                <StackPanel Background="#eaffd0">
                     <!-- save , load and R Button -->
                     <Grid Margin="0 0 0 10">
                         <Grid.ColumnDefinitions>
@@ -19,17 +23,21 @@
                         </Grid.ColumnDefinitions>
                         <Button Content="save"
                             Grid.Column="0"
-                            Margin="0 0 55 0"/>
+                            Margin="0 0 55 0"
+                            Background="#9dc6a7"/>
                         <Button Content="load"
                             Grid.Column="1"
-                            Margin="5 0 50 0"/>
+                            Margin="5 0 50 0"
+                            Background="#9dc6a7"/>
                         <Button Content="R"
                             Grid.Column="2"
-                            Margin="10 0 0 0"/>
+                            Margin="10 0 0 0"
+                            Background="#9dc6a7"/>
                     </Grid>
                     <!--new button-->
                     <Button Content="New" 
-                        Margin="0 0 0 0"/>
+                        Margin="0 0 0 0"
+                        Background="#9dc6a7"/>
                     <Grid Margin="0 10 0 10">
                         <TextBlock Text="check boxes"
                              FontSize="20"/>
@@ -47,35 +55,45 @@
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <CheckBox Grid.Row="0"
-                              Grid.Column="0">
+                              Grid.Column="0"
+                              Background="#cff1ef">
                             checkbox1
                         </CheckBox>
                         <CheckBox Grid.Row="0"
-                              Grid.Column="1">
+                              Grid.Column="1"
+                              Background="#cff1ef">
                             checkbox2
                         </CheckBox>
                         <CheckBox Grid.Row="1"
                               Grid.Column="0"
-                              Margin="0 10 0 10">
+                              Margin="0 10 0 10"
+                              Background="#cff1ef">
                             checkbox3
                         </CheckBox>
                         <CheckBox Grid.Row="1"
                               Grid.Column="1"
-                              Margin="0 10 0 10">
+                              Margin="0 10 0 10"
+                              Background="#cff1ef">
                             checkbox4
                         </CheckBox>
                         <CheckBox Grid.Row="2"
                               Grid.Column="0"
-                              Margin="0 10 0 0">
+                              Margin="0 10 0 0"
+                              Background="#cff1ef">
                             checkbox5
                         </CheckBox>
                         <CheckBox Grid.Row="2"
                               Grid.Column="1"
-                              Margin="0 10 0 0">
+                              Margin="0 10 0 0"
+                              Background="#cff1ef">
                             checkbox6
                         </CheckBox>
                         <ComboBox Grid.Row="0"
                               Grid.Column="2">
+                            <ComboBox.Resources>
+                                <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="#cff1ef" />
+                                
+                            </ComboBox.Resources>
                             <ComboBoxItem>item number 1</ComboBoxItem>
                             <ComboBoxItem>item number 2</ComboBoxItem>
                             <ComboBoxItem>item number 3</ComboBoxItem>
@@ -89,20 +107,28 @@
                          Margin="0 10 0 0"
                              Padding="5"
                             FontSize="14"
+                             x:Name="BigTextBox"
+                             TextWrapping="Wrap"
+                             AcceptsReturn="True"
                          ></TextBox>
                     <Button Content="next page"
                         VerticalAlignment="Center"
                         Margin="130 10 130 0"
-                            x:Name="nextPageButton"
-                            Click="nextPageButton_Click"/>
+                        x:Name="nextPageButton"
+                        Click="nextPageButton_Click"
+                        Background="#9dc6a7"/>
+                    <Image Source="D:\AP project\APWPF\images\image1.jpg"
+                           Margin="0 10 0 0"
+                           Height="120"
+                           Width="12000"/>
                 </StackPanel>
             </Border>
         </TabItem>
         <!-- page 2-->
         <TabItem Header="page 2"
-                 x:Name="page2tabButton">
-            <Border Padding="30">
-                <StackPanel>
+                 x:Name="page2tabButton" Background="#ffd3b6">
+            <Border Padding="30" Background="#eaffd0">
+                <StackPanel Background="#eaffd0">
                     <!--name and the box in front of it-->
                     <Grid Margin="0 0 0 10">
                         <Grid.ColumnDefinitions>
@@ -159,7 +185,7 @@
                                  Padding="5"
                                  FontSize="14" Grid.ColumnSpan="2"/>
                     </Grid>
-                    <Image Source="C:\Users\ASUS\Desktop\image.jpg"
+                    <Image Source="D:\AP project\APWPF/images/image.jpg"
                            Margin="0 100 0 0"/>
                 </StackPanel>
             </Border>
