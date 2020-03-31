@@ -187,7 +187,9 @@
                                  FontSize="14" Grid.ColumnSpan="2"/>
                     </Grid>
                     <Image Source="image.jpg"
-                           Margin="0 100 0 0"/>
+                           Margin="0 75 0 0"/>
+                    <!-- clock-->
+                    <Label FontSize="20" Name="label1"></Label>
                 </StackPanel>
             </Border>
         </TabItem>
