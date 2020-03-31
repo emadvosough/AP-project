@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:APWPF"
         mc:Ignorable="d"
         Title="User interface" Height="600" Width="450">
-        <Window.Background>
+    <Window.Background>
         <SolidColorBrush Color="#9dc6a7">
-            </SolidColorBrush>
-        </Window.Background>
+        </SolidColorBrush>
+    </Window.Background>
     <TabControl x:Name="OnlyTabControl">
         <TabItem Header="page 1" HorizontalAlignment="Right" Width="52" Background="#ffd3b6">
             <Border Padding="30" Background="#eaffd0">
@@ -92,7 +92,7 @@
                               Grid.Column="2">
                             <ComboBox.Resources>
                                 <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="#cff1ef" />
-                                
+
                             </ComboBox.Resources>
                             <ComboBoxItem>item number 1</ComboBoxItem>
                             <ComboBoxItem>item number 2</ComboBoxItem>
@@ -117,10 +117,11 @@
                         x:Name="nextPageButton"
                         Click="nextPageButton_Click"
                         Background="#9dc6a7"/>
-                    <Image Source="D:\AP project\APWPF\images\image1.jpg"
-                           Margin="0 10 0 0"
+                    <Image
+                        Margin="0 10 0 0"
                            Height="120"
-                           Width="12000"/>
+                           Width="12000"
+                           Name="ImageViewer1" Source="image1.jpg"/>
                 </StackPanel>
             </Border>
         </TabItem>
@@ -185,7 +186,7 @@
                                  Padding="5"
                                  FontSize="14" Grid.ColumnSpan="2"/>
                     </Grid>
-                    <Image Source="D:\AP project\APWPF/images/image.jpg"
+                    <Image Source="image.jpg"
                            Margin="0 100 0 0"/>
                 </StackPanel>
             </Border>
